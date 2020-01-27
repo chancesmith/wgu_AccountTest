@@ -6,18 +6,16 @@ namespace AccountTest
 {
     internal class Account
     {
-        private string name; // instance variable
+        public string Name { get; set; } // auto-implemented property
 
-        public string Name
+        // constructor sets the Name perperty to parameter accountName's value
+        public Account(string accountName) // constructor name is class name
         {
-            get // returns the corresponding instance variable's value
-            {
-                return name;
-            }
-            set // assigns a new value to the corresponding instace variable
-            {
-                name = value; // value is implicitly declared and initialized
-            }
+            Name = accountName;
+        }
+
+        public Account()
+        {
         }
     }
 }

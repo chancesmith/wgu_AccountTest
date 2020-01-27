@@ -7,7 +7,7 @@ namespace AccountTest
         private static void Main(string[] args)
         {
             // create an Account object and assign it to myAccount
-            Account myAccount = new Account();
+            Account myAccount = new Account("Chance");
 
             // display myAccount's initial name (there isn't one yet)
             Console.WriteLine($"Initial name is {myAccount.Name}");
